@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            max-width: 1200px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item {
+            flex-basis: 250px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Photo Gallery</h1>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="1730365599664.jpg" alt="Sample Image 1">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/250" alt="Sample Image 2">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/250" alt="Sample Image 3">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/250" alt="Sample Image 4">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/250" alt="Sample Image 5">
+    </div>
+    <div class="gallery-item">
+        <img src="https://via.placeholder.com/250" alt="Sample Image 6">
+    </div>
+</div>
+</body>
+</html>
